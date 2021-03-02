@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/guy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+    color: white;
+}
+.nav{
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.active{
+    border: 1px solid white;
+}
+a{
+    font-size: 20px;
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    padding: 12px 14px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.main-contents{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    align-items: center;
+    font-style: italic;
+    font-size: 80px;
+}
+.btn button{
+    color: white;
+    padding: 12px 14px;
+    border: 1px solid white;
+}
+.btn2:hover{
+    background-color: orange;
+}
+.btn1{
+    color: white;
+    background-color: orange;
+    border: 1px solid white;
+}
+.btn2{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+@media(max-width:600px),(max-width:400px) {
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mylinks a{
+        line-height: 1.1;
+        float: left;
+        font-size: 25px;
+        text-align: left;
+    }
+    .container{
+        height: 100vh;
+    }
+    h1{
+        font-size: 35px;
+        padding-right: 6px;
+        margin-bottom: 10px;
+    }
+    .active{
+        border: 0;
+    }
+    .main-contents{
+        padding-top: 65px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .logo{
+        display: none;
+    }
+    .container{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Designs/guy.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .main-contents{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 200px;
+        align-items: center;
+        font-style: italic;
+        font-size: 50px;
+    } */
+}
